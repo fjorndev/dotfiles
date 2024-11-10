@@ -30,3 +30,5 @@ vim.o.clipboard = 'unnamedplus'
 -- netrw ausschalten
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "#181818" })

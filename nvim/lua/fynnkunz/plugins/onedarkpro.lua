@@ -4,11 +4,8 @@ return {
   config = function ()
       -- normal
       vim.cmd("colorscheme onedark")
-
-      -- für light-mode
-      -- vim.cmd("colorscheme onelight")
-
-      -- für mehr Kontrast
-      -- vim.cmd("colorscheme onedark_dark")
+      vim.api.nvim_set_hl(0, "Normal", { bg = "#181818" })
+      vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#181818"})
+      vim.api.nvim_set_hl(0, "LineNr", { bg = "#181818" }) 
   end
 }
